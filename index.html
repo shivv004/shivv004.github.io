@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS
+        </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <script>
+        function big_image(){
+            document.getElementById("image").style.width="350px";
+        }
+
+        function small_img(){
+            document.getElementById("image").style.width="175px";
+        }
+
+        function big_p(){
+            document.getElementById("pp").style.fontSize="40px";
+        }
+
+        function small_p(){
+            document.getElementById("pp").style.fontSize="15px";
+        }
+        function detail(){
+            alert(`Name: Shiv Shnakar`);
+            alert(`Registration: 202000475`);
+        }
+    </script>
+
+    <body>
+        <div class="top-section">
+            <div class="heading"><br>
+                <h1>LAB 4 ASSIGNMENT</h1>
+            </div>
+        </div>
+        
+        <div class="page_content">
+            <div class="middle-area">
+                <p>Click to get Details !!</p>
+                <button id="details" onclick="detail()">Click Me!</button>
+                <!-- <h2>My Details: </h2>
+                <p>Registration: 202000475</p>
+                <p>Name: Shiv Shankar</p> -->
+                <p id="pp"onmouseover="big_p()" onmouseout="small_p()">Image:APJ Abdul Kalam</p>
+                <img src="apj.jfif" alt="rog" id="image" style="width:200px;height:auto;" onmouseover="big_image()" onmouseout="small_img()">    
+            </div>
+            <div class="footer">
+            <div class="details">
+                shiv_202000475@smit.smu.edu.in
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
